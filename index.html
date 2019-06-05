@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<h1 style="">ОЧКИ</h1>
+<h1 class="summa"></h1>
+
+	<div class="card1 col-4 flex1" style="background-image: url(img/Antilop.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 8%; margin-top: 76 "></div>
+	<div class="card2 col-4 flex1" style="background-image: url(img/begemot.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 68%; margin-top: 32 "></div>
+	<div class="card3 col-4 flex1" style="background-image: url(img/elephant.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 25%; margin-top: 60%"></div>
+	<div class="card4 col-4 flex1" style="background-image: url(img/giena.jpg); height: 200px; width: 300px; background-size: 100% 100%;position: absolute; margin-left: 40%; margin-top: 35 ">
+	</div>
+	<div class="card5 col-4" style="background-image: url(img/jiraf.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 65%; margin-top: 35%"></div>
+	<div class="card6 col-4" style="background-image: url(img/korova.jpg); height: 200px; width: 300px; background-size: 100% 100%;position: absolute; margin-left: 15%; margin-top: 42% "></div>
+	<div class="card7 col-4" style="background-image: url(img/lion.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 10%; margin-top:  20%">
+	</div>
+	<div class="card8" style="background-image: url(img/nosorog.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 35%; margin-top: 25% "></div>
+	<div class="card9" style="background-image: url(img/zebra.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 71%; margin-top: 55% "></div>
+
+
+<div class="vopros" style="display: none">
+	
+	<h2 style="position: absolute; margin-left: 35%; margin-top: 20%">Где спрятана зебра?</h2>
+</div> 
+
+
+
+
+
+<script>
+	let summa = 100
+	document.querySelector(".summa").innerHTML = 100
+let cards = function () {
+document.querySelector (".card1").style.background = "black";
+document.querySelector (".card2").style.background = "black";
+document.querySelector (".card3").style.background = "black";
+document.querySelector (".card4").style.background = "black";
+document.querySelector (".card5").style.background = "black";
+document.querySelector (".card6").style.background = "black";
+document.querySelector (".card7").style.background = "black";
+document.querySelector (".card8").style.background = "black";
+document.querySelector (".card9").style.background = "black";
+document.querySelector (".vopros").style.display = "flex"
+}
+
+setTimeout (cards, 5000)
+
+
+
+
+
+document.querySelector (".card1").onclick = function () {
+	alert ("не верно");
+	document.querySelector(".card1").style.backgroundImage = "url(img/Antilop.jpg)"
+	summa = summa - 10
+	document.querySelector(".summa").innerHTML=summa
+}
+document.querySelector (".card2").onclick  = function () {
+	alert ("не верно");
+	document.querySelector(".card2").style.backgroundImage = "url(img/begemot.jpg)"
+	summa = summa - 10
+	document.querySelector(".summa").innerHTML=summa
+}
+document.querySelector (".card3").onclick  = function () {
+	alert ("не верно");
+	document.querySelector(".card3").style.backgroundImage = "url(img/elephant.jpg)"
+	summa = summa - 10
+	document.querySelector(".summa").innerHTML=summa
+}
+document.querySelector (".card4").onclick  = function () {
+	alert ("не верно");
+	document.querySelector(".card4").style.backgroundImage = "url(img/giena.jpg)"
+	summa = summa - 10
+	document.querySelector(".summa").innerHTML=summa
+}
+document.querySelector (".card5").onclick  = function () {
+	alert ("не верно");
+	document.querySelector(".card5").style.backgroundImage = "url(img/jiraf.jpg)"
+	summa = summa - 10
+	document.querySelector(".summa").innerHTML=summa
+}
+document.querySelector (".card6").onclick  = function () {
+	alert ("не верно");
+	document.querySelector(".card6").style.backgroundImage = "url(img/korova.jpg)"
+	summa = summa - 10
+	document.querySelector(".summa").innerHTML=summa
+}
+document.querySelector (".card7").onclick  = function () {
+	alert ("не верно");
+	document.querySelector(".card7").style.backgroundImage = "url(img/lion.jpg)"
+	summa = summa - 10
+	document.querySelector(".summa").innerHTML=summa
+}
+document.querySelector (".card8").onclick  = function () {
+	alert ("не верно");
+	document.querySelector(".card8").style.backgroundImage = "url(img/nosorog.jpg)"
+	summa = summa - 10
+	document.querySelector(".summa").innerHTML=summa
+}
+document.querySelector(".card9").onclick = function () {
+	alert ("верно")
+	document.querySelector(".card9").style.backgroundImage = "url(img/zebra.jpg)"
+	summa = summa + 100
+	document.querySelector(".summa").innerHTML=summa
+}
+</script>	
+</body>
+</html>
